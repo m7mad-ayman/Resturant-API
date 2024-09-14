@@ -36,7 +36,7 @@
     ```
   - Install Requirements
     ```
-    cd Shorten-Urls-master
+    cd Resturant-API-master
     pip install -r requirements.txt
     ```
   - Create database
