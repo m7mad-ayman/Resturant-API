@@ -21,7 +21,7 @@ class IngredientSerializer(ModelSerializer):
 class IngredientItemSerializer(ModelSerializer):
     ingredient = serializers.StringRelatedField()
     class Meta:
-        model = IngerdientItem
+        model = IngredientItem
         fields = ["ingredient","amount"]
 
 class MenuSerializer(ModelSerializer):
@@ -31,7 +31,7 @@ class MenuSerializer(ModelSerializer):
         model = MenuItem
         fields = ['name','description','price','is_available','ingredients','category']
     def get_ingredients(self,obj):
-        items = IngerdientItem.objects.filter(menuitem= MenuItem.objects.get(name=obj.name))
+        items = IngredientItem.objects.filter(menuitem= MenuItem.objects.get(name=obj.name))
         serial = IngredientItemSerializer(items,many=True)
         return serial.data
 
