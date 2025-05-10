@@ -46,7 +46,6 @@ A Django REST Framework API for managing a restaurant's backend operations inclu
    ```bash
    pip install -r requirements.txt
 
-
 4. **Apply migrations**:
    ```bash
    python manage.py makemigrations
@@ -59,7 +58,3 @@ A Django REST Framework API for managing a restaurant's backend operations inclu
 6. **Run the server**:
    ```bash
    python manage.py runserver
-
-
-
-
